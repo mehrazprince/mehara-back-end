@@ -1,0 +1,27 @@
+[
+  {
+    "userId": 2,
+    "message": "Great to hear that",
+    "timestamp": 1567260807553
+  },
+  {
+    "userId": 2,
+    "message": "Hi",
+    "timestamp": 1567258170466
+  },
+  {
+    "userId": 1,
+    "message": "I am fine. Thanks!",
+    "timestamp": 1567260791037
+  },
+  {
+    "userId": 2,
+    "message": "How are you",
+    "timestamp": 1567258220450
+  },
+  {
+    "userId": 1,
+    "message": "Hello",
+    "timestamp": 1567258195752
+  }
+]
