@@ -7,13 +7,13 @@
   },
   {
     "id": 2,
-    "username": "admin1",
+    "username": "user2",
     "password": "b",
     "type": "user"
   },
   {
     "id": 3,
-    "username": "supplier1",
+    "username": "user3",
     "password": "c",
     "type": "user"
   }

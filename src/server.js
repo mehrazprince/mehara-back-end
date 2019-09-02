@@ -40,7 +40,7 @@ io.on("connection", socket => { //socket connection
       io.emit("messages", JSON.parse(fs.readFileSync('./chat.json', "utf-8")));
     });
   });
-});
+});   //socket
 
 http.listen(4000);
 
