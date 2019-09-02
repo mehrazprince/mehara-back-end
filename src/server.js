@@ -36,7 +36,7 @@ io.on("connection", socket => { //socket connection
     msg = JSON.parse(msg);
     msg.push(resultSet);
     fs.writeFileSync('./chat.json', JSON.stringify(msg), "utf-8", function (err, res) {
-      if (err) {
+      if (err) {//error handling
         res.send("An error occured while writing JSON Object to File." + err);
       }
       io.emit("messages", JSON.parse(fs.readFileSync('./chat.json', "utf-8")));
