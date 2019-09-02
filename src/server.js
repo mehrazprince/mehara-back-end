@@ -23,8 +23,10 @@ io.on("connection", socket => { //socket connection
     io.emit("messages", JSON.parse(msg));
   });
 
-  socket.on("addMessage", (message, loggedInUser) => {//add message
+  socket.on("addMessage", data => {//add message
     var date = new Date().getTime();
+    var loggedInUser = data.id;
+    var message = data.message;
     var resultSet = {
       userId: loggedInUser,
       message: message,
