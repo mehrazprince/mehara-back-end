@@ -1,0 +1,12 @@
+[
+    {
+      "id": 1,
+      "groupname": "a",
+     "userlist":[1,2]
+    },
+    {
+        "id": 2,
+        "groupname": "b",
+       "userlist":[1,3]
+      }
+  ]
