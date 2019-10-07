@@ -1,1 +1,89 @@
-[{"id":1,"username":"a","password":"a","birthdate":"","age":19,"email":"ab@gmail.com","valid":true,"type":"supp","groupadmin":true,"grouplist":[],"admingrouplist":["zz"]},{"id":2,"username":"b","password":"b","birthdate":"1/2/19","age":"99","email":"b@b.comm","valid":true,"type":"admin","groupadmin":false,"gourplist":[],"admingrouplist":[]},{"id":3,"username":"c","password":"c","birthdate":"1/2/1999","age":"19","email":"p@p.com","valid":"true","type":"admin","groupadmin":false,"grouplist":[],"admingrouplist":[]},{"id":7,"username":"d","password":"d","birthdate":"1/2/1999","age":"19","email":"p@p.com","valid":"true","type":"user","groupadmin":true,"grouplist":[],"admingrouplist":["ww"]},{"id":6,"type":"admin","username":"e","password":"e","birthdate":"1/2/1999","age":"19","email":"p@p.com","valid":"true","groupadmin":true,"grouplist":[],"admingrouplist":["ww"]},{"id":2,"username":"qwe","birthdate":"eqwe","age":23,"email":"Kadnorpradeep6@gmail.com","groupadmin":false},{"id":8,"username":"erew","birthdate":"ewr","age":3,"email":"dsfsd@re.fdd","groupadmin":true},{"id":14,"username":"dsf","birthdate":"sdf","age":23,"email":"sa@fsd.h","groupadmin":true}]
+[
+    {
+        "id": 1,
+        "username": "a",
+        "password": "a",
+        "birthdate": "",
+        "age": 19,
+        "email": "ab@gmail.com",
+        "valid": true,
+        "type": "supp",
+        "groupadmin": true,
+        "grouplist": [],
+        "admingrouplist": [
+            "zz"
+        ]
+    },
+    {
+        "id": 2,
+        "username": "b",
+        "password": "b",
+        "birthdate": "1/2/19",
+        "age": "99",
+        "email": "b@b.comm",
+        "valid": true,
+        "type": "admin",
+        "groupadmin": false,
+        "gourplist": [],
+        "admingrouplist": []
+    },
+    {
+        "id": 3,
+        "username": "c",
+        "password": "c",
+        "birthdate": "1/2/1999",
+        "age": "19",
+        "email": "p@p.com",
+        "valid": "true",
+        "type": "admin",
+        "groupadmin": false,
+        "grouplist": [],
+        "admingrouplist": []
+    },
+    {
+        "id": 7,
+        "username": "d",
+        "password": "d",
+        "birthdate": "1/2/1999",
+        "age": "19",
+        "email": "p@p.com",
+        "valid": "true",
+        "type": "user",
+        "groupadmin": true,
+        "grouplist": [],
+        "admingrouplist": [
+            "ww"
+        ]
+    },
+    {
+        "id": 6,
+        "type": "admin",
+        "username": "e",
+        "password": "e",
+        "birthdate": "1/2/1999",
+        "age": "19",
+        "email": "p@p.com",
+        "valid": "true",
+        "groupadmin": true,
+        "grouplist": [],
+        "admingrouplist": [
+            "ww"
+        ]
+    },
+    {
+        "id": 2,
+        "username": "qwe",
+        "birthdate": "eqwe",
+        "age": 23,
+        "email": "Kadnorpradeep6@gmail.com",
+        "groupadmin": false
+    },
+    {
+        "id": 8,
+        "username": "erew",
+        "birthdate": "ewr",
+        "age": 3,
+        "email": "dsfsd@re.fdd",
+        "groupadmin": true
+    }
+]
