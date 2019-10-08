@@ -6,8 +6,10 @@ var io = require('socket.io')(http);
 const fs = require('fs');
 
 chatServer.use(express.static(__dirname));
-chatServer.use(bodyParser.json());
+chatServer.use(bodyParser.json());// body-parser middleware
 chatServer.use(bodyParser.urlencoded({ extended: false }));
+
+// Allowing cross-origin sites to make requests to this API
 chatServer.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -17,7 +19,7 @@ const port = 3000;
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 
-// Connection URL
+// Connection URL --- connecting to mongoDB
 const url = 'mongodb://localhost:27017';
 
 // Database Name
@@ -68,8 +70,10 @@ client.connect(function (err) {
   http.listen(4000);
 
   //chat api
-  io.on("connection", socket => {
-    socket.on("getUser", () => {
+   /* 'connection' is a socket.io event that is triggered when a new connection is 
+       made. Once a connection is made, callback is called. */
+  io.on("connection", socket => { /* socket object allows us to join specific clients to chat rooms and also to catch and emit the events.*/
+      socket.on("getUser", () => {
       db.collection("user").find({}).toArray((user_err, users) => {
         if (!user_err) {
           socket.emit("user", users);
@@ -77,6 +81,7 @@ client.connect(function (err) {
       });
     });
 
+    // catching the message event
     socket.on("getMessages", () => {
       db.collection('chat').find({}).toArray((resp_err, records) => {
         if (!resp_err) {
@@ -185,6 +190,7 @@ client.connect(function (err) {
     res.send({ status: 200, response: "Saved successfully" });
   })
 
+  // POST request route to save users to the database
   chatServer.post("/api/user", (req, res) => {
     const { username, type } = req.body
     db.collection("user").find({}).toArray((err, user) => {
